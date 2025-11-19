@@ -1,0 +1,164 @@
+<link rel="stylesheet" href="/css/style.css">
+<script src="/js/script.js"></script>
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Guide Banquaire - Accueil</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Police Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS externe -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- JS externe -->
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="page">
+    
+    <!-- HEADER -->
+    <header>
+      <div class="brand">
+        <div class="brand-logo">GB</div>
+        <div class="brand-text">
+          <div class="brand-title">Guide Banquaire</div>
+          <div class="brand-sub">Trouve la banque qui te correspond</div>
+        </div>
+      </div>
+
+      <nav>
+        <a href="#accueil" class="nav-link nav-link--active">Accueil</a>
+        <a href="#banques" class="nav-link">Banques</a>
+        <a href="#conseils" class="nav-link">Conseils</a>
+        <a href="#contacts" class="nav-link">Contacts</a>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <main>
+      <section class="hero" id="accueil">
+        <div class="hero-main">
+
+          <div class="hero-badge">
+            <span class="hero-badge-dot"></span>
+            Guide Banquaire Accueil
+          </div>
+
+          <h1 class="hero-title">
+            Trouve la meilleure<br>
+            <span>banque</span> pour<br>
+            ton profil
+          </h1>
+
+          <p class="hero-sub">
+            Compare les banques traditionnelles, en ligne, mobiles et publiques
+            pour choisir le compte le plus adapté à ton quotidien d’étudiant.
+          </p>
+
+          <div class="hero-actions">
+            <button class="btn-primary">commencer ➜</button>
+            <span class="hero-note">Quelques questions suffisent pour commencer.</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- POURQUOI OUVRIR -->
+      <section class="section" id="conseils">
+        <div class="section-header">
+          <h2 class="section-title">Pourquoi ouvrir un compte&nbsp;?</h2>
+          <p class="section-sub">
+            Sécurité, accessibilité et coûts maîtrisés pour ton quotidien.
+          </p>
+        </div>
+
+        <div class="reasons-grid">
+          <article class="reason-card">
+            <div class="reason-pill">Sécurité</div>
+            <h3 class="reason-title">Tes fonds sont en sécurité</h3>
+            <p class="reason-text">
+              Tes fonds sont protégés avec des solutions de paiement sécurisées.
+            </p>
+          </article>
+
+          <article class="reason-card">
+            <div class="reason-pill">Accessibilité</div>
+            <h3 class="reason-title">Ouvre un compte à distance</h3>
+            <p class="reason-text">
+              Tout peut être fait en ligne rapidement si tu étudies à l’étranger.
+            </p>
+          </article>
+
+          <article class="reason-card">
+            <div class="reason-pill">Coût maitrisés</div>
+            <h3 class="reason-title">Taux de change adaptés</h3>
+            <p class="reason-text">
+              Profite de frais réduits et adaptés à un budget étudiant.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- MENU DÉROULANT BANQUES -->
+      <section class="section" id="banques">
+        <div class="section-header">
+          <h2 class="section-title">Types de Banques</h2>
+          <p class="section-sub">Découvre les différentes options pour ouvrir ton compte.</p>
+        </div>
+
+        <button class="dropdown-toggle" onclick="toggleBanks()">
+          Afficher / masquer les types de banques
+          <span id="arrow">▼</span>
+        </button>
+
+        <div id="banksDropdown" class="dropdown-content">
+          <div class="banks-grid">
+
+            <article class="bank-card">
+              <div class="bank-tag">Banques traditionnelles</div>
+              <h3 class="bank-name">Avec agences</h3>
+              <p class="bank-desc">Guichets physiques et accompagnement en face à face.</p>
+            </article>
+
+            <article class="bank-card">
+              <div class="bank-tag">Banques en ligne</div>
+              <h3 class="bank-name">100 % Internet</h3>
+              <p class="bank-desc">Ouverture rapide, frais réduits, interface moderne.</p>
+            </article>
+
+            <article class="bank-card">
+              <div class="bank-tag">Néobanques</div>
+              <h3 class="bank-name">100 % mobile</h3>
+              <p class="bank-desc">Gestion du compte en temps réel sur smartphone.</p>
+            </article>
+
+            <article class="bank-card">
+              <div class="bank-tag">Banques publiques</div>
+              <h3 class="bank-name">Service universel</h3>
+              <p class="bank-desc">Accès garanti au compte bancaire pour tous.</p>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACTS -->
+      <section class="section" id="contacts">
+        <div class="section-header">
+          <h2 class="section-title">Contacts</h2>
+          <p class="section-sub">Pour toute question, contacte ta future banque.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      Guide Banquaire – Page d’accueil HTML / CSS
+    </footer>
+  </div>
+</body>
+</html>
